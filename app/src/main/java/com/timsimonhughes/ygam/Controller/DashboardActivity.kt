@@ -46,7 +46,7 @@ class DashboardActivity : AppCompatActivity() {
         mViewPager = findViewById (R.id.dashboardViewpager)
 
         mTabLayout.addTab(mTabLayout.newTab().setText("Tab 1"))
-        mTabLayout.addTab(mTabLayout.newTab().setText("Tab 2"))
+        mTabLayout.addTab(mTabLayout.newTab().setText("Tab 4"))
         mTabLayout.addTab(mTabLayout.newTab().setText("Tab 3"))
         mTabLayout.tabGravity = TabLayout.GRAVITY_FILL
 
