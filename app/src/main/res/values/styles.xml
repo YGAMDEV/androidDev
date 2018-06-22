@@ -1,0 +1,47 @@
+<resources>
+
+    <style name="MyTheme" parent="Base.MyTheme"></style>
+
+    <!-- Base application theme. -->
+    <style name="Base.MyTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/bg_light</item>
+    </style>
+
+    <style name="Base.MyTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Onboarding Theme -->
+    <style name="OnboardingTheme" parent="Theme.AppCompat.NoActionBar">
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+    <!-- Onboarding Theme -->
+
+    <!-- DashBoard Theme -->
+    <style name="DashboardTheme" parent="Base.MyTheme">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+    <!-- DashBoard Theme -->
+
+    <color name="bg_light">#FAFAFA</color>
+
+    <!-- Splash Screen Theme -->
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+    <!-- Splash Screen Theme -->
+
+</resources>

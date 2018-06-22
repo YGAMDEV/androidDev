@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- General Colors -->
+    <color name="colorPrimary">#ff9800</color>
+    <color name="colorPrimaryDark">#f57c00</color>
+    <color name="colorAccent">#03dac4</color>
+    <color name="white">#ffffff</color>
+
+    <!-- Pagination Colors -->
+    <color name="colorSelected">#ffffff</color>
+    <color name="colorUnselected">#60ffffff</color>
+    <color name="lightGrey">#E5E5E5</color>
+
+    <!-- Text Colors -->
+    <color name="black40">#40000000</color>
+
+    <!-- Onboarding -->
+    <color name="onboardingColor1">#E88C1C</color>
+    <color name="onboardingColor2">#FFE402</color>
+    <color name="onboardingColor3">#FF3725</color>
+    <color name="onboardingColor4">#115CB2</color>
+    <color name="onboardingColor5">#03dac4</color>
+
+</resources>

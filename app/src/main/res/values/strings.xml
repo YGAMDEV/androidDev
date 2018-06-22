@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">YGAM</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragment_1_label">Fragment 1</string>
+    <string name="fragment_2_label">Fragment 2</string>
+
+    <string name="skip_button_label">Skip</string>
+    <string name="finish_button_label">Finish</string>
+    <string name="finish_button_description">Finish Button Description</string>
+    <string name="next_button_description">Next Button Description</string>
+
+    <string name="fragment_1_image_description_1">Image 1 Description</string>
+    <string name="fragment_1_image_description_2">Image 2 Description</string>
+    <string name="fragment_2_image_description_1">Image 1 Description</string>
+    <string name="fragment_2_image_description_2">Image 2 Description</string>
+    <string name="fragment_3_image_description_1">Image 1 Description</string>
+    <string name="fragment_3_image_description_2">Image 2 Description</string>
+    <string name="fragment_4_image_description_1">Image 1 Description</string>
+    <string name="fragment_4_image_description_2">Image 2 Description</string>
+    <string name="fragment_5_image_description_1">Image 1 Description</string>
+    <string name="fragment_5_image_description_2">Image 2 Description</string>
+
+    <string name="fragment_1_text_description_1">Fragment 1 Text 1</string>
+    <string name="fragment_1_text_description_2">Fragment 1 Text 2</string>
+    <string name="fragment_2_text_description_1">Fragment 2 Text 1</string>
+    <string name="fragment_2_text_description_2">Fragment 2 Text 2</string>
+    <string name="fragment_3_text_description_1">Fragment 3 Text 1</string>
+    <string name="fragment_3_text_description_2">Fragment 3 Text 2</string>
+    <string name="fragment_4_text_description_1">Fragment 4 Text 1</string>
+    <string name="fragment_4_text_description_2">Fragment 4 Text 2</string>
+    <string name="fragment_5_text_description_1">Fragment 5 Text 1</string>
+    <string name="fragment_5_text_description_2">Fragment 5 Text 2</string>
+
+    <string name="menu_night_mode">Night mode</string>
+    <string name="menu_night_mode_system">Follow system</string>
+    <string name="menu_night_mode_day">Day (always)</string>
+    <string name="menu_night_mode_night">Night (always)</string>
+    <string name="menu_night_mode_auto">Auto</string>
+
+    <string name="check">check</string>
+    <string name="cross">cross</string>
+    <string name="groupCheckCross">groupCheckCross</string>
+
+    <!-- geometry -->
+    <!--<integer name="viewport_width">24</integer>-->
+    <!--<integer name="viewport_height">24</integer>-->
+    <integer name="viewport_center_x">12</integer>
+    <integer name="viewport_center_y">12</integer>
+    <integer name="stroke_width">2</integer>
+
+    <string name="path_check">M4.8,13.4 L9,17.6 M10.4,16.2 L19.6,7</string>
+    <string name="path_cross">M6.4,6.4 L17.6,17.6 M6.4,17.6 L17.6,6.4</string>
+
+
+    <string name="fragment_1_title">Get a glimpse into how your habits add up</string>
+    <string name="fragment_1_subcopy">Answer 10 questions to get a tailored summary of how you activity and habits</string>
+    <string name="fragment_2_title">Tasks help you improve your habits</string>
+    <string name="fragment_2_subcopy">Subcopy Here</string>
+    <string name="fragment_3_title">Keep track of your progression with the task tracker</string>
+    <string name="fragment_3_subcopy">Subcopy Here</string>
+    <string name="fragment_4_title">Collect achievements for completing tasks </string>
+    <string name="fragment_4_subcopy">Subcopy Here</string>
+
+
+
+    <!-- timing -->
+    <integer name="duration">450</integer>
+    <integer name="rotationDeg225">225</integer>
+    <integer name="rotationDeg90">90</integer>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="username">Username</string>
+
+</resources>

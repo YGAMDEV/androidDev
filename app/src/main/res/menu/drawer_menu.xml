@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/drawItem1"
+        android:title="Draw Item 1"
+        android:icon="@drawable/ic_check">
+    </item>
+
+    <item
+        android:id="@+id/drawItem2"
+        android:title="Draw Item 2"
+        android:icon="@drawable/ic_check">
+    </item>
+
+    <item
+        android:id="@+id/drawItem3"
+        android:title="Draw Item 3"
+        android:icon="@drawable/ic_check">
+    </item>
+
+    <item
+        android:id="@+id/drawItem4"
+        android:title="Draw Item 4"
+        android:icon="@drawable/ic_check">
+    </item>
+</menu>
