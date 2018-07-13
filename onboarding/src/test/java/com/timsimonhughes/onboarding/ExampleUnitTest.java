@@ -1,4 +1,4 @@
-package com.timsimonhughes.onboarding;
+package com.scrabit.onboarding;
 
 import org.junit.Test;
 

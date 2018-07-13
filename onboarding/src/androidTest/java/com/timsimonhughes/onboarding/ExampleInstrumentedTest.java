@@ -1,4 +1,4 @@
-package com.timsimonhughes.onboarding;
+package com.scrabit.onboarding;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

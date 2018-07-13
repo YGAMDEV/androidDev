@@ -5,7 +5,7 @@ apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion 27
     defaultConfig {
-        applicationId "com.timsimonhughes.ygam"
+        applicationId "com.ygam.scrabit"
         minSdkVersion 21
         targetSdkVersion 27
         versionCode 1

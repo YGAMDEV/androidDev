@@ -7,10 +7,10 @@
     android:id="@+id/main_content"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.timsimonhughes.ygam.fragments.OnboardingFragment1"
+    tools:context="com.scrabit.ygam.fragments.OnboardingFragment1"
     android:fitsSystemWindows="true">
 
-    <com.timsimonhughes.ygam.FlowingGradientView
+    <com.scrabit.ygam.FlowingGradientView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         gradient:transition_duration = "4000"

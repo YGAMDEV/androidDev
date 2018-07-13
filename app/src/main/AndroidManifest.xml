@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.timsimonhughes.ygam">
+    package="com.scrabit.ygam">
 
     <application
         android:allowBackup="true"
@@ -36,7 +36,7 @@
             tools:ignore="InnerclassSeparator">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.timsimonhughes.ygam.controller.MainActivity" />
+                android:value="com.scrabit.ygam.controller.MainActivity" />
         </activity>
         <activity
             android:name=".controller.QuestionsActivity"
