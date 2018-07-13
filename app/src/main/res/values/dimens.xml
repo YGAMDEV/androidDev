@@ -1,21 +1,44 @@
 <resources>
+
+    <!-- Sizing - Dimens 1U = 8dp -->
+    <dimen name="unit0.5_spacing">4dp</dimen>
+
+    <dimen name="unitX1_spacing">8dp</dimen>
+    <dimen name="unitX2_spacing">16dp</dimen>
+    <dimen name="unitX3_spacing">24dp</dimen>
+    <dimen name="unitX4_spacing">32sp</dimen>
+    <dimen name="unitX5_spacing">40dp</dimen>
+    <dimen name="unitX6_spacing">48dp</dimen>
+    <dimen name="unitX7_spacing">56dp</dimen>
+    <dimen name="unitX8_spacing">64dp</dimen>
+
     <!-- Default screen margins, per the Android Design guidelines. -->
-    <dimen name="activity_horizontal_margin">16dp</dimen>
-    <dimen name="activity_vertical_margin">16dp</dimen>
-    <dimen name="fab_margin">16dp</dimen>
-    <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="activity_horizontal_margin">@dimen/unitX2_spacing</dimen>
+    <dimen name="activity_vertical_margin">@dimen/unitX2_spacing</dimen>
+    <dimen name="fab_margin">@dimen/unitX2_spacing</dimen>
+    <dimen name="appbar_padding_top">@dimen/unitX3_spacing</dimen>
 
-
-    <dimen name="fab_elevation">8dp</dimen>
-
+    <!-- FAB -->
+    <dimen name="fab_elevation">@dimen/unitX1_spacing</dimen>
     <dimen name="fab_elevation_press">12dp</dimen>
-    <dimen name="fab_size">56dp</dimen>
+    <dimen name="fab_size">@dimen/unitX7_spacing</dimen>
 
-    <dimen name="statusbar_size">24dp</dimen>
+    <!-- Component Sizing -->
+    <dimen name="statusBar_size">@dimen/unitX3_spacing</dimen>
+    <dimen name="button_sizing">@dimen/unitX6_spacing</dimen>
 
-    <dimen name="cardview_toolbar_spacer">16dp</dimen>
-    <dimen name="toolbar_double_height">112dp</dimen>
-    <dimen name="appbar_header_height">256dp</dimen>
-    <dimen name="activity_margin_half">8dp</dimen>
-    <dimen name="activity_margin_content">24dp</dimen>
+    <!-- Modal -->
+    <dimen name="dialog_margin">@dimen/unitX4_spacing</dimen>
+    <dimen name="dialog_corners">@dimen/unit0.5_spacing</dimen>
+    <dimen name="dialog_elevation">@dimen/unitX1_spacing</dimen>
+    <dimen name="button_corners">@dimen/unit0.5_spacing</dimen>
+    <dimen name="activity_margin_half">@dimen/unitX1_spacing</dimen>
+    <dimen name="spacing_micro">@dimen/unitX1_spacing</dimen>
+
+    <!-- Duration -->
+    <integer name="anim_duration_very_long">1500</integer>
+    <integer name="anim_duration_long">500</integer>
+    <integer name="anim_duration_medium">300</integer>
+
+
 </resources>

@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- General Colors -->
-    <color name="colorPrimary">#ff9800</color>
-    <color name="colorPrimaryDark">#f57c00</color>
+    <color name="colorPrimary">#26688A</color>
+    <color name="colorPrimaryDark">#234481</color>
     <color name="colorAccent">#03dac4</color>
     <color name="white">#ffffff</color>
+
+    <color name="primaryBlue">#234481</color>
+    <color name="secondaryBlue">#26688A</color>
 
     <!-- Pagination Colors -->
     <color name="colorSelected">#ffffff</color>
@@ -13,6 +16,7 @@
 
     <!-- Text Colors -->
     <color name="black40">#40000000</color>
+    <color name="white90">#90ffffff</color>
 
     <!-- Onboarding -->
     <color name="onboardingColor1">#E88C1C</color>
@@ -20,5 +24,20 @@
     <color name="onboardingColor3">#FF3725</color>
     <color name="onboardingColor4">#115CB2</color>
     <color name="onboardingColor5">#03dac4</color>
+
+    <color name="fab_background_color">#03dac4</color>
+    <color name="dialog_background_scrim">#99323232</color>
+    <color name="dialog_background_color">#fafafa</color>
+
+
+    <color name="blueStart">#4EFFF3</color>
+    <color name="blueEnd">#0ca6f9</color>
+    <color name="purpleStart">#a369ff</color>
+    <color name="purpleEnd">#0e56ff</color>
+    <color name="roseStart">#FF6A00</color>
+    <color name="roseEnd">#ef0276</color>
+    <color name="greenStart">#a7f56e</color>
+    <color name="greenEnd">#11c612</color>
+
 
 </resources>

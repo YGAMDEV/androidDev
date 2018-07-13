@@ -7,8 +7,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/nav_header_bg"
-        android:scaleType="centerInside" />
+        android:background="@drawable/app_gradient" />
 
     <TextView
         style="@style/TextAppearance.AppCompat.Subhead"
@@ -16,7 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:layout_margin="16dp"
-        android:text="Your Name Here"
+        android:text="@string/user_name_label"
         android:textColor="@android:color/white" />
 
 </FrameLayout>

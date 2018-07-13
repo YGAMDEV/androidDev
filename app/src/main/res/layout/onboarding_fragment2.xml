@@ -1,43 +1,68 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.timsimonhughes.ygam.Fragments.OnboardingFragment1">
+    tools:background="@color/colorPrimaryDark"
+    tools:context="com.timsimonhughes.ygam.fragments.OnboardingFragment1">
 
 
-    <RelativeLayout
-        android:id="@+id/top"
+    <TextView
+        android:id="@+id/fragment2Title"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:background="@drawable/onboarding_card_background"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_gravity="center"
-        android:layout_above="@+id/middle"/>
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/unitX2_spacing"
+        android:layout_marginStart="@dimen/unitX2_spacing"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/rubik_medium"
+        android:lineSpacingExtra="4dp"
+        android:text="@string/fragment_2_title"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <RelativeLayout
-        android:id="@+id/middle"
+    <TextView
+        android:id="@+id/fragment2Subcopy"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="32dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="@dimen/unitX2_spacing"
+        android:layout_marginTop="@dimen/unitX2_spacing"
+        android:fontFamily="@font/rubik"
+        android:lineSpacingExtra="10sp"
+        android:text="@string/fragment_2_subcopy"
+        android:textAlignment="center"
+        android:textColor="@color/white90"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment2Title" />
+
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragment2Subcopy"
         android:layout_marginEnd="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        android:layout_gravity="center"
-        android:background="@drawable/onboarding_card_background" />
-
-    <RelativeLayout
-        android:id="@+id/bottom"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:background="@drawable/onboarding_card_background"
         android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_below="@+id/middle"
-        android:layout_gravity="center"/>
+        android:layout_marginTop="32dp">
 
+        <ImageView
+            android:id="@+id/fragment2Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:adjustViewBounds="true"
+            android:maxWidth="400dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/onboarding_image_1" />
 
+    </FrameLayout>
 
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>

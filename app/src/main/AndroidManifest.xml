@@ -11,25 +11,37 @@
         android:supportsRtl="true"
         android:theme="@style/Base.MyTheme">
         <activity
-            android:name=".Controller.SplashActivity"
+            android:name=".controller.SplashActivity"
             android:theme="@style/SplashTheme"
             tools:ignore="InnerclassSeparator">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".Controller.OnboardingActivity"
+            android:name=".controller.OnboardingActivity"
             android:label="@string/app_name"
             android:theme="@style/OnboardingTheme"
             tools:ignore="InnerclassSeparator" />
         <activity
-            android:name=".Controller.DashboardActivity"
-            android:label="@string/title_activity_dashboard"
+            android:name=".controller.MainActivity"
+            android:label="@string/title_activity_main"
             android:theme="@style/DashboardTheme"
             tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".controller.DialogExampleActivity"
+            android:label="@string/title_activity_dialog"
+            android:theme="@style/DialogTheme"
+            tools:ignore="InnerclassSeparator">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.timsimonhughes.ygam.controller.MainActivity" />
+        </activity>
+        <activity
+            android:name=".controller.QuestionsActivity"
+            android:label="@string/title_activity_questions"
+            android:theme="@style/QuestionsTheme"/>
     </application>
 
 </manifest>

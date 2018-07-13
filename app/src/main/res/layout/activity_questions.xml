@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/question_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/unitX4_spacing"
+        android:gravity="center"
+        android:lineSpacingExtra="14sp"
+        android:text="Discover"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/confirm_Button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/unitX6_spacing"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/unitX2_spacing"
+        android:layout_marginEnd="@dimen/unitX2_spacing"
+        android:layout_marginStart="@dimen/unitX2_spacing"
+        android:gravity="bottom" />
+
+
+    <com.igalata.bubblepicker.rendering.BubblePicker
+        android:id="@+id/picker"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

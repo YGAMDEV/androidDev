@@ -4,71 +4,79 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:background="@color/colorPrimaryDark"
-    tools:context="com.timsimonhughes.ygam.Fragments.OnboardingFragment1">
+    tools:context="com.timsimonhughes.ygam.fragments.OnboardingFragment1">
 
-
-    <android.support.constraint.ConstraintLayout
-        android:id="@+id/fragmentCard1"
+    <TextView
+        android:id="@+id/fragment1Title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="70dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
-        android:background="@drawable/onboarding_card_background"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <TextView
-            android:id="@+id/fragmentCardTitle1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="32dp"
-            android:fontFamily="@font/rubik_medium"
-            android:lineSpacingExtra="10sp"
-            android:text="@string/fragment_1_title"
-            android:textAlignment="center"
-            android:textColor="@android:color/black"
-            android:textSize="20sp"
-            android:typeface="normal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="32dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:fontFamily="@font/rubik"
-            android:lineSpacingExtra="10sp"
-            android:text="@string/fragment_1_subcopy"
-            android:textAlignment="center"
-            android:textColor="@color/black40"
-            android:textSize="14sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/fragmentCardTitle1" />
-
-    </android.support.constraint.ConstraintLayout>
-
-    <ImageView
-        android:id="@+id/circleCenter"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:src="@drawable/circle"
-        app:layout_constraintBottom_toTopOf="@+id/fragmentCard1"
+        android:layout_marginEnd="@dimen/unitX2_spacing"
+        android:layout_marginStart="@dimen/unitX2_spacing"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/rubik_medium"
+        android:lineSpacingExtra="4dp"
+        android:text="@string/fragment_1_title"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fragment1Subcopy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="@dimen/unitX2_spacing"
+        android:layout_marginTop="@dimen/unitX2_spacing"
+        android:fontFamily="@font/rubik"
+        android:lineSpacingExtra="10sp"
+        android:text="@string/fragment_1_subcopy"
+        android:textAlignment="center"
+        android:textColor="@color/white90"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment1Title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragment1Subcopy"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp">
+
+        <FrameLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/fragment1Image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:adjustViewBounds="true"
+                android:maxWidth="400dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/onboarding_image_1" />
+
+            <ImageView
+                android:id="@+id/fragment1spotlight"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center|center"
+                android:gravity="bottom"
+                android:src="@drawable/onboarding_spotlight"/>
+
+        </FrameLayout>
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
