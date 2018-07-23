@@ -6,41 +6,23 @@
     tools:background="@color/colorPrimaryDark"
     tools:context="com.scrabit.ygam.fragments.OnboardingFragment1">
 
-
     <TextView
         android:id="@+id/fragment2Title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/unitX2_spacing"
-        android:layout_marginStart="@dimen/unitX2_spacing"
+        style="@style/AppHeadingTextViewStyle"
         android:layout_marginTop="56dp"
-        android:fontFamily="@font/rubik_medium"
-        android:lineSpacingExtra="4dp"
         android:text="@string/fragment_2_title"
-        android:textAlignment="center"
-        android:textColor="@android:color/white"
-        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/fragment2Subcopy"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="@dimen/unitX2_spacing"
+        style="@style/AppSubcopyTextViewStyle"
         android:layout_marginTop="@dimen/unitX2_spacing"
-        android:fontFamily="@font/rubik"
-        android:lineSpacingExtra="10sp"
         android:text="@string/fragment_2_subcopy"
-        android:textAlignment="center"
-        android:textColor="@color/white90"
-        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fragment2Title" />
-
 
     <FrameLayout
         android:layout_width="0dp"
@@ -61,7 +43,7 @@
             android:adjustViewBounds="true"
             android:maxWidth="400dp"
             android:scaleType="fitCenter"
-            android:src="@drawable/onboarding_image_1" />
+            android:src="@drawable/onboarding_placeholder_image" />
 
     </FrameLayout>
 

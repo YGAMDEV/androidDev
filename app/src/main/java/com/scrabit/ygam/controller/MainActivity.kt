@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
 
         val actionBar = supportActionBar
-        actionBar!!.setHomeAsUpIndicator(R.drawable.ic_24dp_menu)
+        actionBar!!.setHomeAsUpIndicator(R.drawable.ic_menu)
         actionBar.setDisplayHomeAsUpEnabled(true)
 
         collapsingToolbarLayout.isTitleEnabled = false
@@ -70,7 +70,6 @@ class MainActivity : AppCompatActivity() {
         dashboardPagerAdapter!!.addFragment(DashboardTasksFragment())
         dashboardPagerAdapter!!.addFragment(DashboardBadgesFragment())
         dashboardViewpager.adapter = dashboardPagerAdapter
-
     }
 
     private fun initNavigationView() {

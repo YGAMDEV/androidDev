@@ -1,12 +1,11 @@
 <resources>
     <!-- App -->
-    <string name="app_name">YGAM</string>
-    <string name="app_string">com.timsimonhughes.ygam</string>
+    <string name="app_name">Scrabit</string>
+    <string name="app_string">com.scrabit.ygam</string>
 
     <!-- Activity -->
     <string name="action_settings">Settings</string>
     <string name="title_activity_main">MainActivity</string>
-
 
     <!-- Onboarding -->
     <string name="skip_button_label">Skip</string>
@@ -56,7 +55,6 @@
     <string name="path_check">M4.8,13.4 L9,17.6 M10.4,16.2 L19.6,7</string>
     <string name="path_cross">M6.4,6.4 L17.6,17.6 M6.4,17.6 L17.6,6.4</string>
 
-
     <string name="fragment_0_copy">We all spend more time on our phones, tablets and consoles than we perhaps should. At times, this can make us feel a bit down. So [APP NAME] is here to help you get back control of your device usage. We want you to feel good, and have the tools to maintain a healthy relationship with your devices.</string>
     <string name="fragment_1_title">Take Control</string>
     <string name="fragment_1_subcopy">Our questionnaire will help you identify any areas that may need extra focus. It’s quick, simple and fun to use</string>
@@ -67,13 +65,10 @@
     <string name="fragment_4_title">Stay updated</string>
     <string name="fragment_4_subcopy">Sit back, relax and focus on your goals. We’ll update you when it’s time to track your progress</string>
 
-
     <!-- timing -->
     <integer name="duration">450</integer>
     <integer name="rotationDeg225">225</integer>
     <integer name="rotationDeg90">90</integer>
-
-
     <string name="username">Username</string>
 
     <string name="tab_1_label">Tasks</string>
@@ -90,23 +85,30 @@
     <string name="title_activity_question">QuestionActivity</string>
     <string name="title_activity_questions">QuestionsActivity</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="send_me_notifications_label">Send me reminder notifications</string>
 
-    <string name="question_0">Did you use any of these devices yesterday?</string>
-    <string name="question_1">What did you use your devices for?</string>
-    <string name="question_2">What was your motivation?</string>
-    <string name="question_3">How long in total did you spend on your device?</string>
-    <string name="question_4">And Where did you spend the majority of your time?</string>
-    <string name="question_5">Did you spend any money?</string>
-    <string name="question_6">What was the impact?</string>
-    <string name="question_7">How in control do you feel in terms of both time and money?</string>
-    <string name="question_8">Looking back at your activity, what has been the impact?</string>
-    <string name="question_9">What do you want to do next?</string>
+    <string name="question0">Did you use any of these devices yesterday?</string>
+    <string name="question0_choice">Continue</string>
+    <string name="question1">What did you use your devices for?</string>
+    <string name="question1_choice">Continue</string>
+    <string name="question2">What was your motivation?</string>
+    <string name="question2_choice">Continue</string>
+    <string name="question3">How long in total did you spend on your device?</string>
+    <string name="question3_choice">Continue</string>
+    <string name="question4">And Where did you spend the majority of your time?</string>
+    <string name="question4_choice">Continue</string>
+    <string name="question5">Did you spend any money?</string>
+    <string name="question5_choice">Continue</string>
+    <string name="question6">What was the impact?</string>
+    <string name="question6_choice">Continue</string>
+    <string name="question7">How in control do you feel in terms of both time and money?</string>
+    <string name="question7_choice">Continue</string>
+    <string name="question8">Looking back at your activity, what has been the impact?</string>
+    <string name="question8_choice">Continue</string>
+    <string name="question9">What do you want to do next?</string>
+    <string name="question9_choice">Finish</string>
 
-
-
-
+    <string name="continue_button_label">Continue</string>
 
 </resources>

@@ -18,12 +18,12 @@ class TasksAdapter(private val context: Context?) : RecyclerView.Adapter<TasksAd
 
         mMockDashboardModels = MockDashboardModel.prepareDesserts(
                 context!!.resources.getStringArray(R.array.dessert_names),
-                context!!.resources.getStringArray(R.array.dessert_descriptions)) as ArrayList<MockDashboardModel>
+                context.resources.getStringArray(R.array.dessert_descriptions)) as ArrayList<MockDashboardModel>
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TasksVh {
         val inflater = LayoutInflater.from(parent.context)
-        val view = inflater.inflate(R.layout.mock_list_item, parent, false)
+        val view = inflater.inflate(R.layout.list_item_example, parent, false)
         return TasksAdapter.TasksVh(view)
     }
 

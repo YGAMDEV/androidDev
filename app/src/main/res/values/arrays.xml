@@ -31,34 +31,17 @@
         <item>A family of confections made with sugar or honey, roasted nuts, whipped egg whites, and sometimes chopped candied fruit. The consistency of nougat is chewy, and it is used in a variety of candy bars and chocolates.</item>
     </string-array>
 
-    <string-array name="countries">
-        <item>Argentina</item>
-        <item>Bolivia</item>
-        <item>Brazil</item>
-        <item>Chile</item>
-        <item>Costa Rica</item>
-        <item>Dominican Republic</item>
-        <item>Mexico</item>
-        <item>Nicaragua</item>
-        <item>Peru</item>
-        <item>Venezuela</item>
-        <item>Cuba</item>
-        <item>Ecuador</item>
-        <item>El Salvador</item>
-        <item>Haiti</item>
-        <item>Panama</item>
-        <item>Paraguay</item>
-    </string-array>
-
     <string-array name="questions">
         <item>Did you use any of these devices yesterday?</item>
-        <item>Did you use any of these devices yesterday?</item>
-        <item>Did you use any of these devices yesterday?</item>
-        <item>Did you use any of these devices yesterday?</item>
-        <item>Did you use any of these devices yesterday?</item>
-        <item>Did you use any of these devices yesterday?</item>
-        <item>Did you use any of these devices yesterday?</item>
-        <item>Did you use any of these devices yesterday?</item>
+        <item>What did you use your devices for?</item>
+        <item>Question3</item>
+        <item>Question4</item>
+        <item>Question5</item>
+        <item>Question6</item>
+        <item>Question7</item>
+        <item>Question8</item>
+        <item>Question9</item>
+        <item>Question10</item>
     </string-array>
 
     <string-array name="achievements">
@@ -71,13 +54,6 @@
         <item>Achievement 7</item>
         <item>Achievement 8</item>
         <item>Achievement 9</item>
-    </string-array>
-
-    <string-array name="answers">
-        <item>Phone</item>
-        <item>Tablet</item>
-        <item>Console</item>
-        <item>PC/Laptop</item>
     </string-array>
 
     <integer-array name="colors">

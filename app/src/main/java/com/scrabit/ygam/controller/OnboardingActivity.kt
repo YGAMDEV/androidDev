@@ -7,24 +7,20 @@ import android.support.v7.app.AppCompatActivity
 import android.support.v4.view.ViewPager
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
-import android.widget.ImageButton
 import com.scrabit.ygam.adapters.OnboardingAdapter
 import com.scrabit.ygam.fragments.*
 import com.scrabit.ygam.pageTransformers.OnboardingPageTransformer
-import com.rd.PageIndicatorView
 import com.rd.animation.type.AnimationType
 import com.scrabit.ygam.R
 import kotlinx.android.synthetic.main.activity_onboarding.*
+import android.view.WindowManager
+
+
 
 
 class OnboardingActivity : AppCompatActivity() {
 
     private var mOnboardingAdapter: OnboardingAdapter?=null
-    private lateinit var mViewPager: ViewPager
-    private lateinit var mNextButton: ImageButton
-    private lateinit var mFinishButton: Button
-    private lateinit var mSkipButton: Button
     private var pagePosition: Int = 0
     private lateinit var mPageTransformer: OnboardingPageTransformer
     private lateinit var sharedPreferences: SharedPreferences
@@ -35,32 +31,32 @@ class OnboardingActivity : AppCompatActivity() {
         //checkFirstRun()
 
         setContentView(R.layout.activity_onboarding)
+
         setupViews()
 
-        val pageIndicatorView = findViewById<PageIndicatorView>(R.id.pageIndicatorView)
         pageIndicatorView.setAnimationType(AnimationType.WORM)
-        pageIndicatorView.count = 5 // specify total count of indicators
+        pageIndicatorView.count = 5
         pageIndicatorView.selection = 0
 
-        mViewPager = findViewById(R.id.viewPager)
-        mViewPager.adapter = mOnboardingAdapter
+        viewPager.adapter = mOnboardingAdapter
 
         mPageTransformer = OnboardingPageTransformer()
-        mViewPager.setPageTransformer(false,  mPageTransformer)
-        mViewPager.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
+        viewPager.setPageTransformer(false,  mPageTransformer)
+        viewPager.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
 
             override fun onPageScrolled(position: Int, positionOffset: Float, positionOffsetPixels: Int) {
                 val x = ((viewPager.width * position + positionOffsetPixels) * computeFactor()).toInt()
                 scrollView.scrollTo(x, 0)
-
             }
+
             override fun onPageSelected(position: Int) {
                 pageIndicatorView.selection = position
                 pagePosition = position
 
-                mNextButton.visibility = if (position == 4) View.GONE else View.VISIBLE
-                mFinishButton.visibility = if (position == 4) View.VISIBLE else View.GONE
+                intro_btn_next.visibility = if (position == 4) View.GONE else View.VISIBLE
+                intro_btn_finish.visibility = if (position == 4) View.VISIBLE else View.GONE
             }
+
             override fun onPageScrollStateChanged(state: Int) {}
 
             private fun computeFactor(): Float {
@@ -69,24 +65,25 @@ class OnboardingActivity : AppCompatActivity() {
 
         })
 
-        mNextButton.setOnClickListener {
+        intro_btn_next.setOnClickListener {
             pagePosition += 1
-            mViewPager.setCurrentItem(pagePosition, true)
+            viewPager.setCurrentItem(pagePosition, true)
         }
 
-        mSkipButton.setOnClickListener {
+        intro_btn_skip.setOnClickListener {
             val intent = Intent(this, QuestionsActivity::class.java)
             startActivity(intent)
         }
-        mFinishButton.setOnClickListener {
+        intro_btn_finish.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
+
             startActivity(intent)
         }
 
     }
 
     private fun checkFirstRun() {
-        sharedPreferences = getSharedPreferences("com.timsimonhughes.ygam", Context.MODE_PRIVATE)
+        sharedPreferences = getSharedPreferences("com.ygam.scrabit", Context.MODE_PRIVATE)
 
         if (sharedPreferences.getBoolean("firstRun", true)) {
             sharedPreferences.edit().putBoolean("firstRun", false).apply()
@@ -103,10 +100,6 @@ class OnboardingActivity : AppCompatActivity() {
         mOnboardingAdapter!!.addFragment(OnboardingFragment2(), "Fragment 2")
         mOnboardingAdapter!!.addFragment(OnboardingFragment3(), "Fragment 3")
         mOnboardingAdapter!!.addFragment(OnboardingFragment4(), "Fragment 4")
-
-        mSkipButton = findViewById(R.id.intro_btn_skip)
-        mNextButton = findViewById(R.id.intro_btn_next)
-        mFinishButton = findViewById(R.id.intro_btn_finish)
 
     }
 

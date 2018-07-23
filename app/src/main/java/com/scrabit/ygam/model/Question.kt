@@ -1,5 +1,8 @@
 package com.scrabit.ygam.model
 
 data class Question (
-        var questionId: Int = 0
+        var textId: Int,
+        val text: String,
+        val choice: Choice,
+        val isFinalPage: Boolean
 )

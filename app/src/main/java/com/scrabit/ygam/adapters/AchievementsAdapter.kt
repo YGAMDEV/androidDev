@@ -21,7 +21,7 @@ class AchievementsAdapter (private var context: Context?): RecyclerView.Adapter<
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val inflater = LayoutInflater.from(parent.context)
-        val view = inflater.inflate(R.layout.achievement_list_item, parent, false)
+        val view = inflater.inflate(R.layout.list_item_achievement, parent, false)
         return ViewHolder(view)
     }
 
@@ -37,11 +37,7 @@ class AchievementsAdapter (private var context: Context?): RecyclerView.Adapter<
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        val achievementTitle: TextView
-
-        init {
-            achievementTitle = itemView.findViewById(R.id.textViewAchievementTitle)
-        }
+        val achievementTitle: TextView = itemView.findViewById(R.id.textViewAchievementTitle)
 
     }
 

@@ -8,17 +8,9 @@
 
     <TextView
         android:id="@+id/fragment1Subcopy"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/AppSubcopyTextViewStyle"
         android:layout_marginBottom="56dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="@dimen/unitX2_spacing"
-        android:fontFamily="@font/rubik"
-        android:lineSpacingExtra="10sp"
         android:text="@string/fragment_0_copy"
-        android:textAlignment="center"
-        android:textColor="@color/white90"
-        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

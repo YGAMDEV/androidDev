@@ -1,0 +1,74 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@drawable/app_gradient"
+    tools:context="com.scrabit.ygam.fragments.OnboardingFragment1">
+
+
+    <TextView
+        android:id="@+id/fragment4Title"
+        style="@style/AppHeadingTextViewStyle"
+        android:layout_marginTop="56dp"
+        android:text="@string/fragment_4_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fragment4Subcopy"
+        style="@style/AppSubcopyTextViewStyle"
+        android:layout_marginTop="@dimen/unitX2_spacing"
+        android:text="@string/fragment_4_subcopy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment4Title" />
+    
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment4Subcopy"
+        android:gravity="center">
+
+        <FrameLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/appBadge"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_margin="5dp"
+                android:layout_gravity="top|left"
+                android:background="@mipmap/ic_launcher"
+                android:gravity="center"/>
+
+            <ImageView
+                android:id="@+id/notificationBadge"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="end|end"
+                android:src="@drawable/circle"/>
+
+        </FrameLayout>
+
+            <Switch
+                android:id="@+id/fragment4Switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:switchPadding="8dp"
+                android:text="@string/send_me_notifications_label"
+                android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -6,14 +6,11 @@
       "text": "Did you use any of these devices yesterday?",
       "answers": [
         {
-          "text": "Phone"
-        },
+          "text": "Phone"},
         {
-          "text": "Tablet"
-        },
+          "text": "Tablet"},
         {
-          "text": "Console"
-        },
+          "text": "Console"},
         {
           "text": "PC/Laptop"
         }
@@ -21,9 +18,7 @@
       "minSelections": 0,
       "nudge": {
         "text": "How about in the past week?",
-        "trigger": [
-
-        ],
+        "trigger": [],
         "confirmedAction": {
           "type": "app",
           "value": "finish"

@@ -8,10 +8,10 @@ import com.scrabit.ygam.R
 
 class SplashActivity : AppCompatActivity() {
 
-    private var mDelayHandler: Handler? = null
-    private val mSplashDelay: Long = 3000
+    private var delayHandler: Handler? = null
+    private val splashDelay: Long = 3000
 
-    private val mRunnable: Runnable = Runnable {
+    private val splashRunnable: Runnable = Runnable {
         if (!isFinishing) {
             val intent = Intent(applicationContext, OnboardingActivity::class.java)
             overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
@@ -23,14 +23,14 @@ class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        mDelayHandler = Handler()
-        mDelayHandler!!.postDelayed(mRunnable, mSplashDelay)
+        delayHandler = Handler()
+        delayHandler!!.postDelayed(splashRunnable, splashDelay)
     }
 
     override fun onDestroy() {
 
-        if (mDelayHandler != null) {
-            mDelayHandler!!.removeCallbacks(mRunnable)
+        if (delayHandler != null) {
+            delayHandler!!.removeCallbacks(splashRunnable)
         }
         super.onDestroy()
     }

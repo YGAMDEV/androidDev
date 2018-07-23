@@ -17,7 +17,7 @@ class OnboardingPageTransformer : ViewPager.PageTransformer {
         val absPosition = Math.abs(position)
 
         if (position <= -1.0f || position >= 1.0f) {
-            // Page is not visible -- stop runnning any animations
+            // Page is not visible -- stop running any animations
         } else if (position == 0.0f) {
             // Page is selected -- reset any views if necessary
         } else {

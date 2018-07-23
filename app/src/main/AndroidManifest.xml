@@ -41,7 +41,8 @@
         <activity
             android:name=".controller.QuestionsActivity"
             android:label="@string/title_activity_questions"
-            android:theme="@style/QuestionsTheme"/>
+            android:theme="@style/QuestionsTheme"
+            tools:ignore="InnerclassSeparator"/>
     </application>
 
 </manifest>

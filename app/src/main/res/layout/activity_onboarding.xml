@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:attrs="http://schemas.android.com/tools"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,15 +8,14 @@
     android:id="@+id/main_content"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.scrabit.ygam.fragments.OnboardingFragment1"
-    android:fitsSystemWindows="true">
+    tools:context="com.scrabit.ygam.fragments.OnboardingFragment1">
 
     <com.scrabit.ygam.FlowingGradientView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         gradient:transition_duration = "4000"
-        gradient:transition_drawable="@drawable/trans"/>
-    
+        gradient:transition_drawable="@drawable/gradient_transition"/>
+
     <HorizontalScrollView
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
@@ -32,13 +32,11 @@
                 android:alpha="0.05"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
-                android:src="@drawable/example_background_scroll"/>
+                android:src="@drawable/onboarding_example_image"/>
 
         </FrameLayout>
 
     </HorizontalScrollView>
-
-
 
     <android.support.v4.view.ViewPager
         android:id="@+id/viewPager"
@@ -46,7 +44,6 @@
         android:layout_height="match_parent"
         android:layout_marginBottom="?attr/actionBarSize"/>
 
-    <!-- Divider -->
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
@@ -91,8 +88,6 @@
             attrs:piv_padding="12dp"
             app:piv_radius="4dp"/>
 
-
-        <!-- Overlapping button elements -->
         <Button
             android:id="@+id/intro_btn_finish"
             android:contentDescription="@string/finish_button_description"
@@ -115,7 +110,7 @@
             android:layout_gravity="end|center"
             android:padding="@dimen/activity_horizontal_margin"
             android:tint="@android:color/white"
-            android:src="@drawable/ic_24dp_chevron"/>
+            android:src="@drawable/ic_chevron"/>
     </FrameLayout>
 
 
